@@ -1,0 +1,14 @@
+description: Weather
+examples:
+  - How is the weather
+  - How is the weather in [Walldorf](city)?
+  - show weather forecast
+  - What is outside like today?
+  - What is the temperature in [Walldorf](city)?
+  - How is it outside?
+  - What‘s the weather like?
+  - What's the weather like in [Shanghai](city)?
+  - What’s the weather like today?
+  - what is the weather situation
+  - What is the temperature in [Delhi](city)?
+

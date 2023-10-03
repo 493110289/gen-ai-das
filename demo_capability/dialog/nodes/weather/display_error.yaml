@@ -1,0 +1,9 @@
+title: Display Weather
+type: node
+condition: anything_else
+response:
+  messages: 
+    - type: text
+      content: An error occured when fetching the weather information for <? $weather_city ?>
+finally:
+  behavior: wait

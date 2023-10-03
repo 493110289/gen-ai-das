@@ -1,0 +1,9 @@
+title: Display Weather
+type: node
+condition: anything_else
+response:
+  messages: 
+    - type: text
+      content: an error occured when call openAI for  <? $user_input ?>
+finally:
+  behavior: wait

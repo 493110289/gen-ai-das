@@ -1,0 +1,6 @@
+- weather/fetch_weather:
+  - weather/display_weather: []
+  - weather/display_error: []
+- test/openai_call: 
+  - test/display_result: []
+  - test/display_error: []

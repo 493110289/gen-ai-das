@@ -1,0 +1,9 @@
+title: Display Weather
+type: node
+condition: $result.success == true
+response:
+  messages:
+    - type: text
+      content:  openAI:<? $result.message ?>
+finally:
+  behavior: wait

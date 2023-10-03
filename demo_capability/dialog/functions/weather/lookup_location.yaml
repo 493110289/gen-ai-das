@@ -1,0 +1,13 @@
+parameters:
+  - name: city
+action_groups:
+  - actions:
+      - type: api-request
+        method: GET
+        system_alias: WeatherService
+        path: "/location/search?query=<? city ?>&language=en-US&format=json"
+        result_variable: lookup_result
+result:
+  success: <? lookup_result.status_code == 200 ?>
+  city: <? lookup_result.body.location.address[0] ?>
+  placeid: <? lookup_result.body.location.placeId[0] ?>

@@ -1,0 +1,11 @@
+type: node
+title: test/openai_call
+condition: 'true'
+dialog_functions:
+  - name: test/call_openai
+    result_variable: result
+    parameters:
+      - name: user_input
+        value: <? input.text ?>
+finally:
+  behavior: skip

@@ -1,0 +1,28 @@
+parameters:
+  - name: user_input
+action_groups:
+  - actions:
+      - type: api-request
+        method: POST
+        system_alias: OenAIService
+        path: "/completions"
+        headers:
+          "Authorization": "Bearer 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"
+          "Content-Type": "application/json"
+        body: 
+          {
+            "model": "gpt-3.5-turbo",
+            "messages": [{
+                "role": "system",
+                "content": "You are a helpful assistant."
+              },
+              {
+                "role": "user",
+                "content": "<? user_input ?>."
+              }
+            ]
+          }
+        result_variable: lookup_result
+result:
+  success: <? lookup_result.status_code == 200 ?>
+  message: <? lookup_result.body.choices[0].message.content ?>

@@ -1,0 +1,14 @@
+schema_version: 1.0.0
+
+metadata:
+  namespace: namespace
+  name: demo_capability
+  version: 1.0.0
+  display_name: demo_capability
+  description: My demo capability
+
+system_aliases:
+  WeatherService:
+    destination: WEATHER
+  OenAIService:
+    destination: OPENAI
