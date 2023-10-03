@@ -7,7 +7,7 @@ action_groups:
         system_alias: OenAIService
         path: "/completions"
         headers:
-          "Authorization": "Bearer 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"
+          "Authorization": "Bearer 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"
           "Content-Type": "application/json"
         body: 
           {
