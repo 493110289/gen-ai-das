@@ -1,6 +1,6 @@
 title: Fetch Weather
 type: node
-condition: "#weather && ($city != 'citypattern')"
+condition: "#weather && (@city != 'citypattern')"
 slot_filling:
   slots:
     - check_for: "@city"
