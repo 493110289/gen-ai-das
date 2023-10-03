@@ -1,12 +1,24 @@
 parameters:
   - name: city
+  - name: user_input
 action_groups:
+  - condition: city == 'citypattern'
+    actions:
+      - type: set-variables
+        variables:
+          - name: city
+            value: <? user_input ?>
   - actions:
       - type: set-variables
         scripting_type: spel
         variables:
           - name: unit
             value: m
+      - type: set-variables
+        scripting_type: handlebars
+        variables:
+          - name: city
+            value: "{{replace city ' ' '%20'}}"
       - type: dialog-function
         name: weather/lookup_location
         parameters:

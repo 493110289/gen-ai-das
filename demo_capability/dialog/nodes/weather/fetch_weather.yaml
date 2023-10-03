@@ -17,5 +17,7 @@ dialog_functions:
     parameters:
       - name: city
         value: "$weather_city"
+      - name: user_input
+        value: <? input.text ?>
 finally:
   behavior: skip
