@@ -2,6 +2,11 @@ title: Display Weather
 type: node
 condition: anything_else
 response:
+  context:
+    - variable: "city"
+      value: null
+    - variable: "weather_city"
+      value: null
   messages: 
     - type: text
       content: An error occured when fetching the weather information for <? $weather_city ?>

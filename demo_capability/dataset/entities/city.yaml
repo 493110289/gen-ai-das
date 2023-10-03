@@ -1,4 +1,7 @@
 values:
+  - value: citypattern
+    patterns:
+      - "[A-Z][A-Za-z]+"
   - value: Walldorf
   - value: Wiesloch
   - value: Bangalore
