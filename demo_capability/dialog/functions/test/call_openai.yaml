@@ -4,12 +4,12 @@ action_groups:
   - actions:
       - type: api-request
         method: POST
-        system_alias: OenAIService
-        path: "/completions"
+        system_alias: GENAIService
+        path: "/chat/completions?api-version=2023-05-15"
         headers:
-          "Authorization": "Bearer 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"
-          "Content-Type": "application/json"
-        body: 
+            "AI-Resource-Group": "default"
+            "Content-Type": "application/json"
+        body:
           {
             "model": "gpt-3.5-turbo",
             "messages": [{
